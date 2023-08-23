@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Reopen Page on Close</title>
-  <script>
-    window.onbeforeunload = function() {
-      document.location.reload();
-    };
-  </script>
-</head>
 <body>
-  <h1>Page Content</h1>
-  <p>This is a demonstration page.</p>
+  <script>
+    function reloadPage() {
+      location.reload();
+    }
+
+    setTimeout(reloadPage, 0);
+  </script>
 </body>
 </html>
