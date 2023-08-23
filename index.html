@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Self-Reloading Page with While Loop</title>
+</head>
 <body>
   <script>
-    function reloadPage() {
+    var a = 0;
+
+    while (a === 0) {
       location.reload();
     }
-
-    setTimeout(reloadPage, 0);
   </script>
 </body>
 </html>
